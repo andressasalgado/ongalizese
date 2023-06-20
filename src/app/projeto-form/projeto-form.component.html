@@ -1,0 +1,89 @@
+<mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput required>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Localização</mat-label>
+    <input matInput required>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Descrição</mat-label>
+    <textarea matInput required></textarea>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Modalidade</mat-label>
+    <mat-select required>
+      <mat-option value="presencial">Presencial</mat-option>
+      <mat-option value="remoto">Remoto</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Área de atuação</mat-label>
+    <mat-select required>
+      <mat-option value="educacao">Educação</mat-option>
+      <mat-option value="saude">Saúde</mat-option>
+      <mat-option value="meioambiente">Meio ambiente</mat-option>
+      <mat-option value="assistenciasocial">Assistência social</mat-option>
+      <mat-option value="direitoshumanos">Direitos humanos</mat-option>
+      <mat-option value="culturaearte">Cultura e arte</mat-option>
+      <mat-option value="esportes">Esporte</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Tipo de projeto</mat-label>
+    <mat-select required>
+      <mat-option value="educacional">Projetos educacionais</mat-option>
+      <mat-option value="ajudahumanitaria">Projetos de ajuda humanitária</mat-option>
+      <mat-option value="conscientizacao">Projetos de conscientização</mat-option>
+      <mat-option value="infraestrutura">Projetos de infraestrutura</mat-option>
+      <mat-option value="capacitacao">Projetos de capacitação profissional</mat-option>
+      <mat-option value="sustentabilidade">Projetos de sustentabilidade</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Necessidades de doação</mat-label>
+    <mat-select>
+      <mat-option value="financeiro">Doações financeiras</mat-option>
+      <mat-option value="alimentos">Alimentos</mat-option>
+      <mat-option value="roupas">Roupas</mat-option>
+      <mat-option value="materiaisescolates">Materiais escolares</mat-option>
+      <mat-option value="equipamentos">Equipamentos</mat-option>
+      <mat-option value="limpeza">Materiais de limpeza</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Recorrência</mat-label>
+    <mat-select required>
+      <mat-option value="unico">Único (projeto de curta duração)</mat-option>
+      <mat-option value="recorrente">Recorrente (projeto com atividades regulares)</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Tipo de organização</mat-label>
+    <mat-select required>
+      <mat-option value="ongs">Projetos conduzidos por ONGs</mat-option>
+      <mat-option value="independentes">Iniciativas independentes lideradas pela comunidade</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Impacto social</mat-label>
+    <mat-select required>
+      <mat-option value="pobreza">Redução da pobreza</mat-option>
+      <mat-option value="igualdade">Igualdade de gênero</mat-option>
+      <mat-option value="juventude">Empoderamento da juventude</mat-option>
+      <mat-option value="educacao">Acesso à educação</mat-option>
+      <mat-option value="ambiental">Proteção ambiental</mat-option>
+      <mat-option value="moradia">Acesso à moradia</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Instagram</mat-label>
+    <input matInput>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Site</mat-label>
+    <input matInput>
+</mat-form-field>
+<div class="example-button-row">
+    <button (click)="redirectToDetalheProjeto()" style="background-color: black; color: #fff;" mat-raised-button>Enviar</button>
+</div>

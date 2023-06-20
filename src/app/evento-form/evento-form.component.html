@@ -1,0 +1,37 @@
+<mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Localização</mat-label>
+    <input matInput>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Descrição</mat-label>
+    <textarea matInput></textarea>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Modalidade</mat-label>
+    <mat-select>
+      <mat-option value="presencial">Presencial</mat-option>
+      <mat-option value="remoto">Remoto</mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Data</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>Recorrência</mat-label>
+    <mat-select>
+      <mat-option value="unico">Único</mat-option>
+      <mat-option value="semanal">Semanal</mat-option>
+      <mat-option value="quinzenal">Quinzenal</mat-option>
+      <mat-option value="Mensal">Mensal</mat-option>
+    </mat-select>
+</mat-form-field>
+<div class="example-button-row">
+    <button (click)="redirectToDetalheEvento()" style="background-color: black; color: #fff;" mat-raised-button>Enviar</button>
+</div>

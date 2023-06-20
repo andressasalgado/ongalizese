@@ -1,0 +1,19 @@
+<mat-toolbar>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <span>Calendário</span>
+        </button>
+        <button (click)="redirectToListarProjetos()" mat-menu-item>
+          <span>Projetos sociais</span>
+        </button>
+        <button (click)="redirectToNovoUsuario()" mat-menu-item>
+          <span >Cadastre o seu projeto!</span>
+        </button>
+      </mat-menu>
+    <span (click)="redirectToHome()">ONGALIZE-SE</span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+  

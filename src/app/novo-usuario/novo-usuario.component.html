@@ -1,0 +1,31 @@
+<div class="container">
+  <div><mat-label>Algumas informações sobre você</mat-label></div>
+  <div class="example-container">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+  </div>
+  <div class="example-container">
+      <mat-form-field>
+        <mat-label>Senha</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" required>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+  </div>
+  <div class="example-container">
+    <mat-form-field>
+      <mat-label>Confirme a senha</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" required>
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      </mat-form-field>
+  </div>
+  <div>
+    <button (click)="redirectToNovoProjeto()" style="background-color: black; color: #fff;" mat-raised-button>Próximo</button>
+  </div>
+</div>

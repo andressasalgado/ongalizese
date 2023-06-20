@@ -1,0 +1,53 @@
+<div>
+    <h2>Filtros:</h2>
+    <div>
+      <label for="filtroAreaAtuacao">Área de Atuação:</label>
+      <select id="filtroAreaAtuacao" [(ngModel)]="filtroAreaAtuacao">
+        <option value="">Todas as áreas</option>
+        <option *ngFor="let area of areasAtuacao" [value]="area">{{ area }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="filtroLocalizacao">Localização:</label>
+      <select id="filtroLocalizacao" [(ngModel)]="filtroLocalizacao">
+        <option value="">Todas as localizações</option>
+        <option *ngFor="let localizacao of localizacoes" [value]="localizacao">{{ localizacao }}</option>
+      </select>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Área de Atuação</th>
+          <th>Localização</th>
+          <th>Modalidade</th>
+          <th>Descrição</th>
+          <th>Tipo de Projeto</th>
+          <th>Necessidades de doação</th>
+          <th>Recorrência</th>
+          <th>Tipo de Organização</th>
+          <th>Impacto social</th>
+          <th>Instagram</th>
+          <th>Site</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let projeto of projetos">
+          <td>{{ projeto.nome }}</td>
+          <td>{{ projeto.areaAtuacao }}</td>
+          <td>{{ projeto.localizacao }}</td>
+          <td>{{ projeto.modalidade }}</td>
+          <td>{{ projeto.descricao }}</td>
+          <td>{{ projeto.tipoProjeto }}</td>
+          <td>{{ projeto.doacao }}</td>
+          <td>{{ projeto.recorrencia }}</td>
+          <td>{{ projeto.tipoOrganizacao }}</td>
+          <td>{{ projeto.impactoSocial }}</td>
+          <td>{{ projeto.instagram }}</td>
+          <td>{{ projeto.site }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
