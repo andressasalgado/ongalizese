@@ -35,7 +35,7 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule
   ],
-  providers: [],
+  providers: [EventoDetailComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

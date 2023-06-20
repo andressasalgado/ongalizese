@@ -10,13 +10,14 @@ import {MatCardModule} from '@angular/material/card';
   imports: [MatCardModule, MatButtonModule]
 })
 export class EventoDetailComponent {
-  projeto =
+  eventos = [
     {
       nome: 'Evento 1',
       localizacao: 'Porto Alegre',
       modalidade: 'Presencial',
-      data: '20/06/2023',
+      data: new Date('2023-06-10'),
       descricao: 'Arrecadação de materiais escolares',
       recorrencia: 'Único',
     }
+  ]
 }

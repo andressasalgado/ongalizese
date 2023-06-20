@@ -3,7 +3,7 @@
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>
+        <button (click)="redirectToCalendario()" mat-menu-item>
           <span>Calendário</span>
         </button>
         <button (click)="redirectToListarProjetos()" mat-menu-item>

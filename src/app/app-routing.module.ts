@@ -7,6 +7,7 @@ import { EventoFormComponent } from './evento-form/evento-form.component';
 import { HomeComponent } from './home/home.component';
 import { EventoDetailComponent } from './evento-detail/evento-detail.component';
 import { ProjetoListComponent } from './projeto-list/projeto-list.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 const routes: Routes = [{ path: 'novo-usuario', component: NovoUsuarioComponent },
                         { path: 'novo-projeto', component: ProjetoFormComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [{ path: 'novo-usuario', component: NovoUsuarioComponent 
                         { path: 'novo-evento', component: EventoFormComponent },
                         { path: 'home', component: HomeComponent },
                         { path: 'detalhe-evento', component: EventoDetailComponent },
-                        { path: 'listar-projetos', component: ProjetoListComponent }];
+                        { path: 'listar-projetos', component: ProjetoListComponent },
+                        { path: 'calendario', component: CalendarioComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

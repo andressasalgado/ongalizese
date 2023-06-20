@@ -1,0 +1,24 @@
+<div class="calendar" id="calendar"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Localização</th>
+      <th>Modalidade</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Recorrência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let evento of eventos">
+      <td>{{ evento.nome }}</td>
+      <td>{{ evento.localizacao }}</td>
+      <td>{{ evento.modalidade }}</td>
+      <td>{{ evento.data | date }}</td>
+      <td>{{ evento.descricao }}</td>
+      <td>{{ evento.recorrencia }}</td>
+    </tr>
+  </tbody>
+</table>

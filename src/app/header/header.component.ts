@@ -27,4 +27,8 @@ export class HeaderComponent {
   redirectToListarProjetos(): void {
     this.router.navigate(['/listar-projetos']);
   }
+
+  redirectToCalendario(): void {
+    this.router.navigate(['/calendario']);
+  }
 }
